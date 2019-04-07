@@ -1,4 +1,5 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM levep79/jdk-alpine
+
 WORKDIR /app
 COPY ./roles/music/spring-music.jar /app/spring-music.jar
 EXPOSE 8080
