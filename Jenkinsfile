@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("levep79/musicapp", "-f roles/music/Dockerfile .")
+        app = docker.build("ohewave/musicapp", "-f roles/music/Dockerfile .")
     }
 
     stage('Test image') {
